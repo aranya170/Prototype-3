@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #273041;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.peer_pi.Controller">
+   <children>
+      <MFXLegacyListView prefHeight="720.0" prefWidth="143.0" style="-fx-background-radius: 20; -fx-background-color: #1E2633;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="159.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Dashboard">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="160.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resources">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="161.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messaging">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1e2633" height="31.0" layoutX="-6.0" layoutY="470.0" stroke="#ffffff00" strokeType="INSIDE" width="57.0" AnchorPane.bottomAnchor="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1e2633" height="31.0" layoutX="-3.0" layoutY="-3.0" stroke="#1e263300" strokeType="INSIDE" width="32.0" />
+      <Group layoutX="11.0" layoutY="23.0" />
+      <Group layoutX="7.0" layoutY="121.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Tutor.png" />
+               </image>
+            </ImageView>
+            <MFXButton prefHeight="48.0" prefWidth="55.0" rippleAnimateBackground="false" style="-fx-opacity: 0;" text="Button">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MFXButton>
+         </children>
+      </Group>
+      <Group layoutX="15.0" layoutY="383.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="8.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/note.png" />
+               </image>
+            </ImageView>
+            <MFXButton layoutY="-30.0" prefHeight="48.0" prefWidth="55.0" rippleAnimateBackground="false" style="-fx-opacity: 0;" text="Button">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MFXButton>
+         </children>
+      </Group>
+      <Group layoutX="11.0" layoutY="517.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="10.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/chat.png" />
+               </image>
+            </ImageView>
+            <MFXButton layoutX="2.0" prefHeight="48.0" prefWidth="55.0" rippleAnimateBackground="false" style="-fx-opacity: 0;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MFXButton>
+         </children>
+      </Group>
+      <Group layoutX="158.0" layoutY="149.0">
+         <children>
+            <ImageView fitHeight="122.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Question.png" />
+               </image>
+            </ImageView>
+            <MFXButton fx:id="Questions" onAction="#switchToQstn" opacity="0.0" prefHeight="122.0" prefWidth="122.0" style="-fx-border-radius: 20; -fx-background-radius: 10;" text="Question Bank" textFill="TRANSPARENT" />
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="26.0" layoutY="122.734375" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group layoutX="301.0" layoutY="139.0">
+         <children>
+            <ImageView fitHeight="122.0" fitWidth="122.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Books.png" />
+               </image>
+            </ImageView>
+            <MFXButton fx:id="Books" buttonType="RAISED" layoutX="15.0" layoutY="11.0" onAction="#switchToQstn" opacity="0.0" prefHeight="122.0" prefWidth="122.0" style="-fx-border-radius: 20; -fx-background-radius: 10;" text="Books" />
+            <Text fill="WHITE" layoutX="55.0" layoutY="133.734375" strokeType="OUTSIDE" strokeWidth="0.0" text="Books" textAlignment="CENTER" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group layoutX="472.0" layoutY="139.0">
+         <children>
+            <ImageView fitHeight="122.0" fitWidth="122.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Solution.png" />
+               </image>
+            </ImageView>
+            <MFXButton fx:id="Sollutions" buttonType="RAISED" layoutX="15.0" layoutY="11.0" onAction="#switchToQstn" opacity="0.0" prefHeight="122.0" prefWidth="122.0" style="-fx-border-radius: 20; -fx-background-radius: 10;" text="Sollutions" />
+            <Text fill="WHITE" layoutX="41.0" layoutY="133.734375" strokeType="OUTSIDE" strokeWidth="0.0" text="Sollutions" textAlignment="CENTER" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group layoutX="642.0" layoutY="139.0">
+         <children>
+            <ImageView fitHeight="122.0" fitWidth="122.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Notes.png" />
+               </image>
+            </ImageView>
+            <MFXButton fx:id="Notes" buttonType="RAISED" layoutX="15.0" layoutY="11.0" onAction="#switchToQstn" opacity="0.0" prefHeight="122.0" prefWidth="122.0" style="-fx-border-radius: 20; -fx-background-radius: 10;" text="Question Bank" textFill="TRANSPARENT" />
+            <Text fill="WHITE" layoutX="21.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Previous  Notes" textAlignment="CENTER" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group layoutX="155.0" layoutY="342.0">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/StickyNotes.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="19.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sticky Notes" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <MFXButton fx:id="Questions1" layoutX="4.0" layoutY="5.0" onAction="#switchToStickyNotes" opacity="0.0" prefHeight="122.0" prefWidth="122.0" style="-fx-border-radius: 20; -fx-background-radius: 10;" text="Question Bank" textFill="TRANSPARENT" />
+         </children>
+      </Group>
+      <Group layoutX="337.0" layoutY="342.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/To%20do.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="26.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To Do List" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <MFXButton fx:id="Questions11" layoutY="10.0" onAction="#switchToKeepNotes" opacity="0.0" prefHeight="122.0" prefWidth="122.0" style="-fx-border-radius: 20; -fx-background-radius: 10;" text="Question Bank" textFill="TRANSPARENT" />
+         </children>
+      </Group>
+      <Group layoutX="388.0" layoutY="543.0">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="186.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Online%20Tutor.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="49.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ask Online Tutor" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <MFXButton fx:id="TutorHelp" buttonType="RAISED" layoutX="15.0" layoutY="11.0" opacity="0.0" prefHeight="114.0" prefWidth="189.0" style="-fx-border-radius: 20; -fx-background-radius: 10;" text="Mr. Jack of All Trade" />
+         </children>
+      </Group>
+      <Group layoutX="147.0" layoutY="540.0">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="214.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Group%20Discuss.png" />
+               </image>
+            </ImageView>
+            <Text boundsType="VISUAL" fill="WHITE" layoutX="48.0" layoutY="131.734375" strokeType="OUTSIDE" strokeWidth="0.0" text="Join Subject Groups" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <MFXButton fx:id="ChatGroups" buttonType="RAISED" layoutX="15.0" layoutY="11.0" onAction="#switchToWeb" opacity="0.0" prefHeight="122.0" prefWidth="203.0" style="-fx-border-radius: 20; -fx-background-radius: 10;" text="Group Chats" />
+         </children>
+      </Group>
+      <MFXButton alignment="TOP_LEFT" layoutX="13.0" layoutY="169.0" onAction="#switchToQstn" style="-fx-background-color: #1E2633;" text="Questions" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="55.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resouces" textOrigin="TOP">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <MFXButton alignment="TOP_LEFT" layoutX="13.0" layoutY="202.0" onAction="#switchToQstn" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Books" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <MFXButton alignment="TOP_LEFT" layoutX="13.0" layoutY="232.0" onAction="#switchToQstn" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Sollutions" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <MFXButton alignment="TOP_LEFT" layoutX="13.0" layoutY="262.0" onAction="#switchToQstn" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Notes" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <Text fill="WHITE" layoutX="72.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes" textOrigin="TOP">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <MFXButton alignment="TOP_LEFT" layoutX="18.0" layoutY="399.0" onAction="#switchToStickyNotes" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Sticky" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <MFXButton alignment="TOP_LEFT" layoutX="18.0" layoutY="429.0" onAction="#switchToKeepNotes" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="To-Do" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <Text fill="WHITE" layoutX="65.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <MFXButton alignment="TOP_LEFT" layoutX="15.0" layoutY="565.0" onAction="#switchToWeb" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Groups" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <MFXButton alignment="TOP_LEFT" layoutX="15.0" layoutY="595.0" onAction="#switchToWeb" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Tutor" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </MFXButton>
+      <ImageView fitHeight="82.0" fitWidth="122.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Assets/logo-no-background.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="160.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Group layoutX="618.0" layoutY="537.0">
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Feedback.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="32.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feedback" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <MFXButton fx:id="Questions12" layoutX="4.0" layoutY="5.0" onAction="#switchToFeedBack" opacity="0.0" prefHeight="122.0" prefWidth="122.0" style="-fx-border-radius: 20; -fx-background-radius: 10;" text="Question Bank" textFill="TRANSPARENT" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

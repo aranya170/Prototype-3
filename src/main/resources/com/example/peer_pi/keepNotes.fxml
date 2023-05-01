@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXProgressBar?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #273041; -fx-border-color: #1E2633;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.peer_pi.NoteController">
+   <children>
+      <MFXLegacyListView prefHeight="720.0" prefWidth="143.0" style="-fx-background-radius: 20; -fx-background-color: #1E2633;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="167.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To-Do List">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1e2633" height="31.0" layoutX="-6.0" layoutY="470.0" stroke="#ffffff00" strokeType="INSIDE" width="57.0" AnchorPane.bottomAnchor="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1e2633" height="31.0" layoutX="-3.0" layoutY="-3.0" stroke="#1e263300" strokeType="INSIDE" width="32.0" />
+      <Group layoutX="13.0" layoutY="15.0">
+         <children>
+            <MFXButton alignment="TOP_LEFT" layoutY="154.0" onAction="#switchToQstn" style="-fx-background-color: #1E2633;" text="Questions" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </MFXButton>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="42.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resouces" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <MFXButton alignment="TOP_LEFT" layoutY="187.0" onAction="#switchToQstn" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Books" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </MFXButton>
+            <MFXButton alignment="TOP_LEFT" layoutY="217.0" onAction="#switchToQstn" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Sollutions" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </MFXButton>
+            <MFXButton alignment="TOP_LEFT" layoutY="247.0" onAction="#switchToQstn" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Notes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </MFXButton>
+            <Text fill="WHITE" layoutX="59.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <MFXButton alignment="TOP_LEFT" layoutX="5.0" layoutY="384.0" onAction="#switchToStickyNotes" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Sticky" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </MFXButton>
+            <MFXButton alignment="TOP_LEFT" layoutX="5.0" layoutY="414.0" onAction="#switchToKeepNotes" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="To-Do" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </MFXButton>
+            <Text fill="WHITE" layoutX="52.0" layoutY="514.8134765625" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <MFXButton alignment="TOP_LEFT" layoutX="2.0" layoutY="550.0" onAction="#switchToWeb" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Groups" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </MFXButton>
+            <MFXButton alignment="TOP_LEFT" layoutX="2.0" layoutY="580.0" onAction="#switchToWeb" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1E2633;" text="Tutor" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </Group>
+      <Group layoutX="11.0" layoutY="23.0" />
+      <Group layoutX="7.0" layoutY="121.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Tutor.png" />
+               </image>
+            </ImageView>
+            <MFXButton prefHeight="48.0" prefWidth="55.0" rippleAnimateBackground="false" style="-fx-opacity: 0;" text="Button">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MFXButton>
+         </children>
+      </Group>
+      <Group layoutX="15.0" layoutY="383.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="8.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/note.png" />
+               </image>
+            </ImageView>
+            <MFXButton layoutY="-30.0" prefHeight="48.0" prefWidth="55.0" rippleAnimateBackground="false" style="-fx-opacity: 0;" text="Button">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MFXButton>
+         </children>
+      </Group>
+      <Group layoutX="11.0" layoutY="517.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="10.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/chat.png" />
+               </image>
+            </ImageView>
+            <MFXButton layoutX="2.0" prefHeight="48.0" prefWidth="55.0" rippleAnimateBackground="false" style="-fx-opacity: 0;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MFXButton>
+         </children>
+      </Group>
+      <Group layoutX="12.0" layoutY="39.0">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="20.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Home.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="39.0" layoutY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textOrigin="TOP">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <MFXButton alignment="TOP_RIGHT" onAction="#switchToDash" prefHeight="39.0" prefWidth="109.0" style="-fx-opacity: 0;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </MFXButton>
+         </children>
+      </Group>
+      <MFXTextField fx:id="myText" floatMode="BORDER" floatingText="To-Do" layoutX="167.0" layoutY="169.0" prefHeight="38.0" prefWidth="183.0" style="-fx-border-color: #273041;" />
+      <MFXLegacyListView fx:id="myList" depthLevel="LEVEL1" layoutX="167.0" layoutY="216.0" prefHeight="388.0" prefWidth="422.0" style="-fx-background-color: #1E2633; -fx-border-color: #273041;" />
+      <MFXButton fx:id="myBtn" buttonType="RAISED" layoutX="366.0" layoutY="176.0" onAction="#SaveBtn" text="Add" />
+      <MFXButton fx:id="myBtn1" buttonType="RAISED" layoutX="167.0" layoutY="625.0" onAction="#handleDeleteNoteButton" text="Mark Done" />
+      <MFXProgressBar fx:id="myProgressBar" layoutX="622.0" layoutY="360.0" progress="0.0" />
+      <Text fx:id="progressText" fill="WHITE" fontSmoothingType="LCD" layoutX="622.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your progress Today" wrappingWidth="643.384765625">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <MFXTextField fx:id="myTarget" floatMode="BORDER" floatingText="Set your target" layoutX="622.0" layoutY="228.0" prefHeight="38.0" prefWidth="183.0" style="-fx-border-color: #273041;" />
+      <MFXButton fx:id="myTargetBtn" buttonType="RAISED" layoutX="822.0" layoutY="235.0" onAction="#setTarget" text="Save" />
+   </children>
+</AnchorPane>
