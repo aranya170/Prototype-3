@@ -10,16 +10,16 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1E2633;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.peer_pi.SignUp">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1E2633;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.peer_pi.SignIn">
    <children>
       <MFXLegacyListView layoutX="719.0" layoutY="76.0" prefHeight="568.0" prefWidth="466.0" style="-fx-background-radius: 30; -fx-background-color: #273041;" AnchorPane.bottomAnchor="76.0" />
-      <MFXButton fx:id="LogInBtn" buttonType="RAISED" layoutX="796.0" layoutY="514.0" onAction="Click_On_SignIn" style="-fx-background-color: ff5722;" text="Sign Up" textFill="WHITE">
+      <MFXButton fx:id="signUpBtn" buttonType="RAISED" layoutX="796.0" layoutY="514.0" onAction="#Click_On_SignIn" onInputMethodTextChanged="#switchToDash" style="-fx-background-color: ff5722;" text="Sign Up" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
       </MFXButton>
-      <MFXTextField fx:id="firstName" floatMode="BORDER" floatingText="First Name" floatingTextGap="7.0" layoutX="796.0" layoutY="292.0" prefHeight="38.0" prefWidth="168.0" style="-fx-border-color: #ff5722;" />
-      <MFXTextField fx:id="UID" floatMode="BORDER" floatingText="University Id" layoutX="796.0" layoutY="344.0" prefHeight="0.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
+      <MFXTextField fx:id="firstName" floatMode="BORDER" floatingText="First Name" floatingTextGap="7.0" layoutX="796.0" layoutY="292.0" onAction="#Click_On_SignIn" prefHeight="38.0" prefWidth="168.0" style="-fx-border-color: #ff5722;" />
+      <MFXTextField fx:id="UID" floatMode="BORDER" floatingText="University Id" layoutX="796.0" layoutY="344.0" onAction="#Click_On_SignIn" prefHeight="0.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
       <Text fill="#ff5722" layoutX="813.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peer Pie" AnchorPane.bottomAnchor="455.9296875" AnchorPane.leftAnchor="813.0" AnchorPane.rightAnchor="192.7109375" AnchorPane.topAnchor="168.3046875">
          <font>
             <Font name="System Bold" size="72.0" />
@@ -35,13 +35,13 @@
             <Image url="@../../../Assets/logo-no-background.png" />
          </image>
       </ImageView>
-      <MFXTextField fx:id="mailBtn1" floatMode="BORDER" floatingText="Email" floatingTextGap="7.0" layoutX="795.0" layoutY="397.0" prefHeight="0.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
-      <MFXTextField fx:id="LastName" floatMode="BORDER" floatingText="Last Name" floatingTextGap="7.0" layoutX="972.0" layoutY="292.0" prefHeight="38.0" prefWidth="132.0" style="-fx-border-color: #ff5722;" />
-      <MFXButton fx:id="LogInBtn1" buttonType="RAISED" layoutX="892.0" layoutY="514.0" onAction="#switchToLogIn" style="-fx-background-color: ffffff;" text="Log In">
+      <MFXTextField fx:id="mailBtn1" floatMode="BORDER" floatingText="Email" floatingTextGap="7.0" layoutX="795.0" layoutY="397.0" onAction="#Click_On_SignIn" prefHeight="0.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
+      <MFXTextField fx:id="LastName" floatMode="BORDER" floatingText="Last Name" floatingTextGap="7.0" layoutX="972.0" layoutY="292.0" onAction="#Click_On_SignIn" prefHeight="38.0" prefWidth="132.0" style="-fx-border-color: #ff5722;" />
+      <MFXButton fx:id="LogInBtn1" buttonType="RAISED" layoutX="892.0" layoutY="514.0" onAction="#switchToLogIn" onInputMethodTextChanged="#switchToLogIn" style="-fx-background-color: ffffff;" text="Log In">
          <font>
             <Font size="16.0" />
          </font>
       </MFXButton>
-      <MFXPasswordField fx:id="passBtn" floatMode="BORDER" floatingText="Password" layoutX="795.0" layoutY="447.0" prefHeight="38.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
+      <MFXPasswordField fx:id="passBtn" floatMode="BORDER" floatingText="Password" layoutX="795.0" layoutY="447.0" onAction="#Click_On_SignIn" prefHeight="38.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
    </children>
 </AnchorPane>
