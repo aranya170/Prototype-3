@@ -13,7 +13,7 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1E2633;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.peer_pi.SignUp">
    <children>
       <MFXLegacyListView layoutX="719.0" layoutY="76.0" prefHeight="568.0" prefWidth="466.0" style="-fx-background-radius: 30; -fx-background-color: #273041;" AnchorPane.bottomAnchor="76.0" />
-      <MFXButton fx:id="LogInBtn" buttonType="RAISED" layoutX="796.0" layoutY="514.0" style="-fx-background-color: ff5722;" text="Sign Up" textFill="WHITE">
+      <MFXButton fx:id="LogInBtn" buttonType="RAISED" layoutX="796.0" layoutY="514.0" onAction="Click_On_SignIn" style="-fx-background-color: ff5722;" text="Sign Up" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>
