@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1E2633;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.peer_pi.SignUp">
+   <children>
+      <MFXLegacyListView layoutX="719.0" layoutY="76.0" prefHeight="568.0" prefWidth="466.0" style="-fx-background-radius: 30; -fx-background-color: #273041;" AnchorPane.bottomAnchor="76.0" />
+      <MFXButton fx:id="LogInBtn" buttonType="RAISED" layoutX="796.0" layoutY="514.0" style="-fx-background-color: ff5722;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MFXButton>
+      <MFXTextField fx:id="firstName" floatMode="BORDER" floatingText="First Name" floatingTextGap="7.0" layoutX="796.0" layoutY="292.0" prefHeight="38.0" prefWidth="168.0" style="-fx-border-color: #ff5722;" />
+      <MFXTextField fx:id="UID" floatMode="BORDER" floatingText="University Id" layoutX="796.0" layoutY="344.0" prefHeight="0.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
+      <Text fill="#ff5722" layoutX="813.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peer Pie" AnchorPane.bottomAnchor="455.9296875" AnchorPane.leftAnchor="813.0" AnchorPane.rightAnchor="192.7109375" AnchorPane.topAnchor="168.3046875">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="110.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connecting learners, expanding horizons" textAlignment="CENTER" wrappingWidth="478.49609375">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="218.0" fitWidth="194.0" layoutX="260.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Assets/logo-no-background.png" />
+         </image>
+      </ImageView>
+      <MFXTextField fx:id="mailBtn1" floatMode="BORDER" floatingText="Email" floatingTextGap="7.0" layoutX="795.0" layoutY="397.0" prefHeight="0.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
+      <MFXTextField fx:id="passBtn1" floatMode="BORDER" floatingText="Password" layoutX="795.0" layoutY="449.0" prefHeight="0.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
+      <MFXTextField fx:id="LastName" floatMode="BORDER" floatingText="Last Name" floatingTextGap="7.0" layoutX="972.0" layoutY="292.0" prefHeight="38.0" prefWidth="132.0" style="-fx-border-color: #ff5722;" />
+      <MFXButton fx:id="LogInBtn1" buttonType="RAISED" layoutX="892.0" layoutY="514.0" style="-fx-background-color: ffffff;" text="Log In">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MFXButton>
+   </children>
+</AnchorPane>
