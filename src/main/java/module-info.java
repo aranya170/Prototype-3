@@ -3,6 +3,7 @@ module com.example.peer_pi {
     requires javafx.fxml;
     requires MaterialFX;
     requires javafx.web;
+    requires java.sql;
 
 
     opens com.example.peer_pi to javafx.fxml;
