@@ -11,9 +11,9 @@ public class Server {
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
             String message = br.readLine();
             System.out.println("Message received from client: " + message);
-//            br.close();
-//            is.close();
-//            socket.close();
+            br.close();
+            is.close();
+            socket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

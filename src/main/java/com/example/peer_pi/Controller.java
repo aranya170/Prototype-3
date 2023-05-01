@@ -61,6 +61,14 @@ public class Controller {
         window.show();
     }
     @FXML
+    protected void switchToSignUp(ActionEvent event) throws IOException {
+        Parent scene2 = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
+        Scene displayScene = new Scene(scene2);
+        Stage window = (Stage)((Node)(event.getSource())).getScene().getWindow();
+        window.setScene(displayScene);
+        window.show();
+    }
+    @FXML
     protected void switchToFeedBack(ActionEvent event) throws IOException {
         Parent scene2 = FXMLLoader.load(getClass().getResource("FeedBack.fxml"));
         Scene displayScene = new Scene(scene2);

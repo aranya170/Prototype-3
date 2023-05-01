@@ -29,7 +29,7 @@ public class FeedBack extends Controller{
             msgField.setVisible(false);
             sendButton.setVisible(false);
             text.setText("Thanks for your feedback");
-//            socket.close();
+            socket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

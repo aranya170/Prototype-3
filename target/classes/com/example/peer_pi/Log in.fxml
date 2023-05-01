@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
-<?import io.github.palexdev.materialfx.controls.MFXProgressBar?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
 <?import io.github.palexdev.materialfx.controls.MFXTextField?>
 <?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyListView?>
 <?import javafx.scene.image.Image?>
@@ -19,8 +19,7 @@
          </font>
       </MFXButton>
       <MFXTextField fx:id="mailBtn" floatMode="BORDER" floatingText="Email" floatingTextGap="7.0" layoutX="796.0" layoutY="292.0" prefHeight="0.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
-      <MFXTextField fx:id="passBtn" floatMode="BORDER" floatingText="Password" layoutX="796.0" layoutY="344.0" prefHeight="0.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
-      <MFXButton fx:id="createBtn" buttonType="RAISED" layoutX="902.0" layoutY="404.0" text="Create Account">
+      <MFXButton fx:id="createBtn" buttonType="RAISED" layoutX="882.0" layoutY="404.0" onAction="#switchToSignUp" text="Create Account">
          <font>
             <Font size="16.0" />
          </font>
@@ -30,7 +29,6 @@
             <Font name="System Bold" size="72.0" />
          </font>
       </Text>
-      <MFXProgressBar fx:id="progress1" layoutX="851.0" layoutY="520.0" />
       <Text fill="WHITE" layoutX="110.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connecting learners, expanding horizons" textAlignment="CENTER" wrappingWidth="478.49609375">
          <font>
             <Font name="System Bold" size="24.0" />
@@ -41,6 +39,7 @@
             <Image url="@../../../Assets/logo-no-background.png" />
          </image>
       </ImageView>
+      <MFXPasswordField fx:id="passBtn" floatMode="BORDER" floatingText="Password" layoutX="795.0" layoutY="341.0" prefHeight="38.0" prefWidth="310.0" style="-fx-border-color: #ff5722;" />
 <!--      <MFXButton layoutX="486.0" layoutY="60.0" onAction="#onHelloButtonClick" prefHeight="240.0" prefWidth="241.0" rippleAnimateBackground="false" style="-fx-opacity: 0;" />-->
    </children>
 </AnchorPane>
