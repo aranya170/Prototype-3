@@ -8,7 +8,7 @@ public class StudentDAO {
 
     public static StudentInfo searchStudent(String email) throws SQLException, ClassNotFoundException {
         //Declare a SELECT statement
-        String selectStmt = "SELECT * FROM new_table WHERE email='" + email + "'";
+        String selectStmt = "SELECT * FROM users WHERE email='" + email + "'";
 
         //Execute SELECT statement
         try {
@@ -44,7 +44,7 @@ public class StudentDAO {
 
     public static ObservableList<StudentInfo> searchStudents() throws SQLException, ClassNotFoundException {
         //Declare a SELECT statement
-        String selectStmt = "SELECT * FROM new_table";
+        String selectStmt = "SELECT * FROM users";
 
         //Execute SELECT statement
         try {
